@@ -1,0 +1,44 @@
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    background-color: rosybrown;
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background-color: red;
+    order: 3;
+  }
+  #main > aside {
+    background-color: green ;
+    order: 2;
+  }
+  header{
+    font-size: xx-large;
+    background: yellowgreen;
+    height: 20vh;
+  }
+  footer{
+    font-size: medium;
+    background-color: chocolate;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
